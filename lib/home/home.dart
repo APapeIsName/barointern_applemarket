@@ -17,7 +17,9 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Color(0xFFDEE2E6),
         title: Text(widget.title),
-        actions: [Icon(Icons.notifications_none, size: 30.0,), Container(padding: EdgeInsets.all(8.0),)]
+        actions: [IconButton(onPressed: () {
+          ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("아삭아삭, 새 물건 알림 !")));
+        }, icon: Icon(Icons.notifications_none, size: 30.0,),), Container(padding: EdgeInsets.all(8.0),)]
         // IconButton(onPressed: onPressed, icon: Icon(Icons.ring_volume)),
       ),
       body: buildHomeList(),
