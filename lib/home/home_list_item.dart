@@ -27,9 +27,9 @@ class HomeListItem extends StatelessWidget {
               children: [
                 Container(padding: EdgeInsets.all(2.0),),
                 Flexible(
-                  child: Text(productName, maxLines: 2, softWrap: true, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: Colors.black), overflow: TextOverflow.ellipsis,)
+                  child: Text(productName, maxLines: 2, softWrap: true, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: Colors.black), overflow: TextOverflow.ellipsis,)
                 ),
-                Text(address, maxLines: 2, softWrap: true, style: TextStyle(fontWeight: FontWeight.normal, fontSize: 14, color: Colors.black26),),
+                Text(address, maxLines: 2, softWrap: true, style: TextStyle(fontWeight: FontWeight.normal, fontSize: 12, color: Colors.black26),),
                 Text("${NumberFormat('###,###').format(price)} 원", maxLines: 1, softWrap: true, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black),),
                 Row(
                   spacing: 2.0,

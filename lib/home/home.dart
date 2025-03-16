@@ -11,20 +11,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFFDEE2E6),
         title: Text(widget.title),
+        actions: [Icon(Icons.notifications_none, size: 30.0,), Container(padding: EdgeInsets.all(8.0),)]
+        // IconButton(onPressed: onPressed, icon: Icon(Icons.ring_volume)),
       ),
       body: buildHomeList(),
     );
