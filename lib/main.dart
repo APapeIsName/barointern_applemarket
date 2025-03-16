@@ -14,7 +14,7 @@ class AppleMarket extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: '르탄동'),
+      home: const HomePage(title: '르탄동'),
     );
   }
 }

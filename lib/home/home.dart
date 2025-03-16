@@ -1,15 +1,16 @@
+import 'package:barointern_applemarket/home/home_list.dart';
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomePageState extends State<HomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -25,6 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Color(0xFFDEE2E6),
         title: Text(widget.title),
       ),
+      body: buildHomeList(),
     );
   }
 }
